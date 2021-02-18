@@ -3,7 +3,7 @@
 
 html {
   font-size: 1rem;
-  font-family: 'Jura', sans-serif;
+  font-family: 'EB Garamond', serif;
 }
 
 body {
@@ -33,22 +33,58 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size:4rem;
+  text-align: center;
+  font-family: 'Tangerine', cursive;
+  font-weight: 700;
+  font-size:5rem;
   color: #8DA18A;
+  line-height: 10rem;
+  margin-bottom: 11rem;
 }
 
 h2 {
-  font-size:3rem;
-  color: #8A8A8A;
+  font-size:2rem;
+  color: #B8B8B8;
 }
 
 h3 {
-  font-size:2rem;
-  color: #8A8A8A;
+  font-size:1.5rem;
+  color: #B8B8B8;
+  line-height: 4rem;
+  margin-bottom: 4rem;
 }
 
 p {
   font-size: 1.125rem;
   line-height: 1.5;
   color: #000;
+}
+
+.bottom {
+  display: inline-grid;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-top: 50px solid #DDDDDD;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  margin: 0 auto;
+}
+
+.triangle1 {
+  width: 0;
+  height: 0;
+  border-top: 40px solid transparent;
+  border-right: 50px solid #DDDDDD;
+  border-bottom: 40px solid transparent;
+}
+
+.triangle2 {
+  width: 0;
+  height: 0;
+  border-top: 40px solid transparent;
+  border-left: 50px solid #DDDDDD;
+  border-bottom: 40px solid transparent;
 }
