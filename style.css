@@ -11,25 +11,18 @@ body {
   color:#fefefe;
 }
 
-a {
-  text-decoration: underline;
-  color: #fefefe;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
 main {
   display:grid;
   grid-template-rows: auto;
+  grid-template-columns: repeat(11, 1fr);
   margin: 0 auto;
-  width: 75vw;
+  width: 100%;
 }
 
 
 h1, h2, h3 {
   margin-bottom:1rem;
+  grid-column: 2 / 11;
 }
 
 h1 {
@@ -62,6 +55,7 @@ p {
 
 .bottom {
   display: inline-grid;
+  align-items: center;
 }
 
 .triangle {
@@ -70,7 +64,7 @@ p {
   border-top: 50px solid #DDDDDD;
   border-left: 40px solid transparent;
   border-right: 40px solid transparent;
-  margin: 0 auto;
+  grid-row: 30;
 }
 
 .triangle1 {
@@ -79,6 +73,7 @@ p {
   border-top: 40px solid transparent;
   border-right: 50px solid #DDDDDD;
   border-bottom: 40px solid transparent;
+  grid-column: 1 / 2;
 }
 
 .triangle2 {
@@ -87,4 +82,5 @@ p {
   border-top: 40px solid transparent;
   border-left: 50px solid #DDDDDD;
   border-bottom: 40px solid transparent;
+  grid-column: 11 / 12;
 }
