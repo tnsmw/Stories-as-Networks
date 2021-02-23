@@ -15,13 +15,13 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
 }
 
 h1 {
   color: #000;
   font-size: 2rem;
-  padding: 1.5rem;
+  margin: 0;
+  padding: 8rem;
   text-align: left;
 }
 
@@ -44,8 +44,8 @@ h1 {
 
 .horizontal {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  margin-top: -350px;
 }
 
 .triangle1 {
