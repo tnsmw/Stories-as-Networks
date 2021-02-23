@@ -21,6 +21,8 @@
   <link rel="stylesheet" href="normalize.css">
   <link href="style.css" rel="stylesheet" type="text/css">
   <meta name="theme-color" content="#fafafa">
+
+
 </head>
 
 <body>
@@ -28,14 +30,11 @@
   <main>
 
   	<h1>The Garden of Forking Paths <br>
-    Jorge Luis Borges</br></h1>
+    Jorge Luis Borges</h1>
 
-    <h2>To Victoria Ocampo</h2>
 
     <div class="triangle1"></div>
     <div class="triangle2"></div>
-
-    <h3>In his A History of the World War (page 212), Captain Liddell Hart reports that a planned offensive by thirteen British divisions, supported by fourteen hundred artillery pieces, against the German line at Serre-Montauban, scheduled for July 24, 1916, had to be postponed until the morning of the 29th. He comments that torrential rain caused this delay - which lacked any special significance. The following deposition, dictated by, read over, and then signed by Dr. Yu Tsun, former teacher of English at the Tsingtao Hochschule, casts unsuspected light upon this event. The first two pages are missing.</h3>
 
     <div class="bottom">
       <div class="triangle"></div>
@@ -45,16 +44,28 @@
   </main>
 
 
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+<div id="overlay" onclick="off()">
+  <div id="text">In his A History of the World War (page 212), Captain Liddell Hart reports that a planned offensive by thirteen British divisions, supported by fourteen hundred artillery pieces, against the German line at Serre-Montauban, scheduled for July 24, 1916, had to be postponed until the morning of the 29th. He comments that torrential rain caused this delay - which lacked any special significance. The following deposition, dictated by, read over, and then signed by Dr. Yu Tsun, former teacher of English at the Tsingtao Hochschule, casts unsuspected light upon this event. The first two pages are missing.</div>
+</div>
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
+<div style="padding-left:20%">
+  <h2>To Victoria Ocampo</h2>
+  <button onclick="on()">See Letter</button>
+</div>
+
+
+
+<script>
+function on() {
+  document.getElementById("overlay").style.display = "block";
+}
+
+function off() {
+  document.getElementById("overlay").style.display = "none";
+}
+</script>
+
+
 </body>
 
 </html>
