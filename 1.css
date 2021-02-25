@@ -30,7 +30,9 @@ h1 {
 }
 
 .triangle3 {
-  border-bottom: 50px solid #DDDDDD;
+  animation-name: top;
+  animation-duration: .6s;
+  border-bottom: 50px solid #d1d1d1;
   border-left: 40px solid transparent;
   border-right: 40px solid transparent;
   position: fixed;
@@ -39,7 +41,9 @@ h1 {
 }
 
 .triangle4 {
-  border-top: 50px solid #DDDDDD;
+  animation-name: bottom;
+  animation-duration: .6s;
+  border-top: 50px solid #d1d1d1;
   border-left: 40px solid transparent;
   border-right: 40px solid transparent;
   position: fixed;
@@ -53,8 +57,10 @@ h1 {
 }
 
 .triangle1 {
+  animation-name: left;
+  animation-duration: .6s;
   border-top: 40px solid transparent;
-  border-right: 50px solid #DDDDDD;
+  border-right: 50px solid #d1d1d1;
   border-bottom: 40px solid transparent;
   margin-left: 30px;
   position: fixed;
@@ -63,8 +69,10 @@ h1 {
 }
 
 .triangle2 {
+  animation-name: right;
+  animation-duration: .6s;
   border-top: 40px solid transparent;
-  border-left: 50px solid #DDDDDD;
+  border-left: 50px solid #d1d1d1;
   border-bottom: 40px solid transparent;
   margin-right: 30px;
   position: fixed;
@@ -97,4 +105,67 @@ h1 {
   background: #CBDBC9;
   width: 12vw;
   height: 15.6vh;
+}
+
+
+/*keyframes animation*/
+
+@keyframes left {
+  0% {
+    transform: translate(0px, 0px);
+    animation-timing-function:ease-out;
+   }
+  50% {
+    transform: translate(-18px, 0px);
+    animation-timing-function:ease-out;
+   }
+  100% {
+    transform: translate(0px, 0px);
+    animation-timing-function:ease-out;
+   }
+}
+
+@keyframes right {
+  0% {
+    transform: translate(0px, 0px);
+    animation-timing-function:ease-out;
+   }
+  50% {
+    transform: translate(18px, 0px);
+    animation-timing-function:ease-out;
+   }
+  100% {
+    transform: translate(0px, 0px);
+    animation-timing-function:ease-out;
+   }
+}
+
+@keyframes top {
+  0% {
+    transform: translate(0px, 0px);
+    animation-timing-function:ease-out;
+   }
+  50% {
+    transform: translate(0px, -18px);
+    animation-timing-function:ease-out;
+   }
+  100% {
+    transform: translate(0px, 0px);
+    animation-timing-function:ease-out;
+   }
+}
+
+@keyframes bottom {
+  0% {
+    transform: translate(0px, 0px);
+    animation-timing-function:ease-out;
+   }
+  50% {
+    transform: translate(0px, 18px);
+    animation-timing-function:ease-out;
+   }
+  100% {
+    transform: translate(0px, 0px);
+    animation-timing-function:ease-out;
+   }
 }
