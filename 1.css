@@ -7,8 +7,13 @@ html {
 }
 
 body {
-  padding:5rem 0;
   color:#fefefe;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  z-index: 1;
 }
 
 main {
@@ -64,4 +69,29 @@ h1 {
   border-left: 50px solid #DDDDDD;
   border-bottom: 40px solid transparent;
   margin-right: 30px;
+}
+
+.map {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-gap: 10px;
+}
+
+.square {
+  background: #ecf4eb;
+  width: 11.7vw;
+  height: 15.6vh;
+}
+
+.homepage {
+  background: #fff;
+  width: 11.7vw;
+  height: 15.6vh;
+}
+
+.youarehere {
+  background: #CBDBC9;
+  width: 11.7vw;
+  height: 15.6vh;
 }
