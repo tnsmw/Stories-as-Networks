@@ -23,6 +23,15 @@ h1 {
   text-align: left;
 }
 
+p {
+  color: #bcd1ba;
+  font-family: 'Tangerine', cursive;
+  font-size: 8rem;
+  position: fixed;
+  left: 2%;
+  bottom: -18%;
+}
+
 .vertical {
   display: flex;
   flex-direction: column;
@@ -40,6 +49,11 @@ h1 {
   top: 5%;
 }
 
+.triangle3:hover {
+  animation-name: bottom;
+  animation-duration: .6s;
+}
+
 .triangle4 {
   animation-name: bottom;
   animation-duration: .6s;
@@ -49,6 +63,11 @@ h1 {
   position: fixed;
   left: 47.7%;
   bottom: 5%;
+}
+
+.triangle4:hover {
+  animation-name: top;
+  animation-duration: .6s;
 }
 
 .horizontal {
@@ -68,6 +87,11 @@ h1 {
   top: 45%;
 }
 
+.triangle1:hover {
+  animation-name: right;
+  animation-duration: .6s;
+}
+
 .triangle2 {
   animation-name: right;
   animation-duration: .6s;
@@ -78,6 +102,11 @@ h1 {
   position: fixed;
   right: 1%;
   top: 45%;
+}
+
+.triangle2:hover {
+  animation-name: left;
+  animation-duration: .6s;
 }
 
 .map {
@@ -168,4 +197,58 @@ h1 {
     transform: translate(0px, 0px);
     animation-timing-function:ease-out;
    }
+}
+
+/*pages 2 through 47*/
+
+h1.page2 {
+  padding: 16%;
+}
+
+h1.page3 {
+  padding: 19%;
+}
+
+h1.page4 {
+  padding: 15%;
+}
+
+h1.page5 {
+  padding: 16%;
+}
+
+h1.page6 {
+  padding: 14%;
+}
+
+h1.page7 {
+  padding: 16%;
+}
+
+h1.page8 {
+  padding: 16%;
+}
+
+h1.page9 {
+  padding: 16%;
+}
+
+h1.page10 {
+  padding: 16%;
+}
+
+h1.page11 {
+  padding: 16%;
+}
+
+h1.page12 {
+  padding: 16%;
+}
+
+h1.page13 {
+  padding: 16%;
+}
+
+h1.page14 {
+  padding: 16%;
 }
