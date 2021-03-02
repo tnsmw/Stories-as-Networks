@@ -3,7 +3,8 @@
   navigation arrows: line 40
   background map: line 119
   keyframes animation: line 149
-  specifications for pages 2-47: line 213*/
+  specifications for pages 2-47: line 213
+  @media only screen: line 401*/
 
 
 html {
@@ -26,6 +27,13 @@ h1 {
   font-size: 2rem;
   padding: 11.5%;
   text-align: left;
+}
+
+h1-1 {
+  animation: flash;
+  animation-duration: 1s;
+  font-family: 'Tangerine', cursive;
+  font-size: 2.5rem;
 }
 
 p {
@@ -329,7 +337,7 @@ h1.page30 {
 }
 
 h1.page31 {
-  padding: 15.5%;
+  padding: 15%;
 }
 
 h1.page32 {
@@ -349,7 +357,12 @@ h1.page35 {
 }
 
 h1.page36 {
-  padding: 20%;
+  animation: flash;
+  animation-duration: 1s;
+  font-family: 'Tangerine', cursive;
+  font-size: 3.5rem;
+  line-height: 5.5rem;
+  padding: 17%;
 }
 
 h1.page37 {
@@ -361,7 +374,7 @@ h1.page38 {
 }
 
 h1.page39 {
-  padding: 19%;
+  padding: 18.75%;
 }
 
 h1.page40 {
@@ -393,5 +406,82 @@ h1.page46 {
 }
 
 h1.fin {
-  padding: 13%;
+  padding: 12.5%;
+}
+
+
+/*__________________@media only screen__________________*/
+
+@media only screen and (max-width: 400px) {
+
+h1 {
+  font-size: 2rem;
+  padding: 11.5%;
+}
+
+p {
+  font-size: 8rem;
+  position: fixed;
+  left: 2%;
+  bottom: -18%;
+}
+
+.vertical {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.triangle3 {
+  animation-name: top;
+  animation-duration: .6s;
+  border-bottom: 50px solid #d1d1d1;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  position: fixed;
+  left: 47.7%;
+  top: 5%;
+}
+
+.triangle4 {
+  animation-name: bottom;
+  animation-duration: .6s;
+  border-top: 50px solid #d1d1d1;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  position: fixed;
+  left: 47.7%;
+  bottom: 5%;
+}
+
+.horizontal {
+  display: flex;
+  justify-content: center;
+}
+
+.triangle1 {
+  animation-name: left;
+  animation-duration: .6s;
+  border-top: 40px solid transparent;
+  border-right: 50px solid #d1d1d1;
+  border-bottom: 40px solid transparent;
+  margin-left: 30px;
+  position: fixed;
+  left: 1%;
+  top: 45%;
+}
+
+.triangle2 {
+  animation-name: right;
+  animation-duration: .6s;
+  border-top: 40px solid transparent;
+  border-left: 50px solid #d1d1d1;
+  border-bottom: 40px solid transparent;
+  margin-right: 30px;
+  position: fixed;
+  right: 1%;
+  top: 45%;
+}
+
+
 }

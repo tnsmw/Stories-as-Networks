@@ -1,4 +1,8 @@
 
+/*contents:
+  navigation arrows: line 40
+  keyframes animation: line 119
+  @media only screen: line 182*/
 
 
 html {
@@ -33,6 +37,7 @@ h2 {
   color: #B8B8B8;
 }
 
+/*__________________navigation arrows__________________*/
 
 .horizontal {
   display: flex;
@@ -111,7 +116,7 @@ button {
 }
 
 
-/*keyframes animation*/
+/*__________________keyframes animation__________________*/
 
 @keyframes left {
   0% {
@@ -172,3 +177,8 @@ button {
     animation-timing-function:ease-out;
    }
 }
+
+
+/*__________________@media only screen__________________*/
+
+@media only screen and (max-width: 400px) {
